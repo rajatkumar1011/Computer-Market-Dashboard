@@ -6,21 +6,28 @@
   <style>
     html, body {
       margin: 0;
+      padding: 0;
       height: 100%;
-      background-color: #f8f8f8;
+      width: 100%;
+      overflow: hidden;      /* hides scrollbars completely */
+      background-color: #000; /* optional: gives a solid edge if report doesn’t fully fill */
     }
     iframe {
+      position: fixed;        /* locks it to the viewport */
+      top: 0;
+      left: 0;
       width: 100vw;
       height: 100vh;
       border: none;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
-  <iframe 
+  <iframe
     title="Computer Market Dashboard"
     src="https://app.powerbi.com/reportEmbed?reportId=9fd12a1e-3ff7-4ccd-ab1b-1397656b8dd1&autoAuth=true&ctid=a64aeab6-f01b-462b-aa9c-44546386ff31"
-    allowFullScreen="true">
+    allowfullscreen="true">
   </iframe>
 </body>
 </html>
